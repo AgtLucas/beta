@@ -117,7 +117,7 @@ module.exports = function (grunt) {
         relativeAssets: false,
         httpImagesPath: '/img',
         httpGeneratedImagesPath: '/img/generated',
-        outputStyle: 'expanded',
+        outputStyle: 'compressed',
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
