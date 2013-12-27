@@ -107,8 +107,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         // If you're using global Sass gems, require them here.
-        // require: ['singularity', 'jacket'],
-        require: 'susy',
+        // require: ['susy'],
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
@@ -117,7 +116,7 @@ module.exports = function (grunt) {
         relativeAssets: false,
         httpImagesPath: '/img',
         httpGeneratedImagesPath: '/img/generated',
-        outputStyle: 'expanded',
+        environment: 'production',
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
@@ -127,7 +126,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          debugInfo: true,
+          debugInfo: false,
           generatedImagesDir: '.tmp/img/generated'
         }
       }
